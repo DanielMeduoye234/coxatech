@@ -1,0 +1,190 @@
+.about {
+  padding: 80px 0;
+  background: #111;
+  color: #fff;
+}
+
+.aboutContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.left {
+  flex: 1;
+}
+
+.left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Tech Stack */
+.techStack {
+  margin-top: 30px;
+}
+
+.techStack h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ff9800;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 2rem;
+}
+
+.icons svg {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icons svg:hover {
+  transform: translateY(-5px);
+  color: #ff9800;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImg {
+  margin-bottom: 20px;
+}
+
+.image {
+  border-radius: 12px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 420px;
+}
+
+.right h2 {
+  font-size: 2rem;
+  color: #ff9800;
+  margin-bottom: 20px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.expBox {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.expBox:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.expBox h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ff9800;
+}
+
+.expBox p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 1200px) {
+  .aboutContent {
+    gap: 40px;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .left h1 {
+    font-size: 2.2rem;
+  }
+  .left p {
+    font-size: 1rem;
+  }
+  .icons {
+    justify-content: center;
+  }
+  .right h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+  .left h1 {
+    font-size: 2rem;
+  }
+  .left p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .icons {
+    font-size: 1.7rem;
+    gap: 12px;
+  }
+  .image {
+    max-width: 320px;
+  }
+  .expBox h3 {
+    font-size: 1.3rem;
+  }
+  .expBox p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 1.7rem;
+  }
+  .right h2 {
+    font-size: 1.5rem;
+  }
+  .icons {
+    font-size: 1.5rem;
+    gap: 10px;
+  }
+  .expBox {
+    padding: 15px;
+  }
+  .expBox h3 {
+    font-size: 1.2rem;
+  }
+  .expBox p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,11 +1,12 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;   /* black background */
+  --foreground: #ffffff;   /* white text */
+  --accent: #ff6600;       /* accent color (change if you like) */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(135deg, #fff8f0 0%, #ffe0b2 20%, #ff9800 100%);;
     --foreground: #ededed;
   }
 }
@@ -19,7 +20,10 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+  /* Use Urbanist as the default font */
+  font-family: var(--font-urbanist, Arial, Helvetica, sans-serif);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,6 +38,28 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+ul{
+  list-style: none;
+}
+
+/* Headings use secondary font (Poppins) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins, var(--font-urbanist), sans-serif);
+}
+
+/* Accent color for links or highlights */
+a:hover {
+  color: var(--accent);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;   /* centers content */
+  padding: 0 20px;  /* small side padding for mobile */
+  width: 100%;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {

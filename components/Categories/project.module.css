@@ -1,0 +1,196 @@
+.projects {
+  padding: 100px 0;
+  background: #ff9800; /* Orange background */
+  position: relative;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 70px;
+  color: #192336; /* Navy text to pop on orange */
+  font-family: var(--font-urbanist, sans-serif);
+  font-weight: 800;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.projects h2::after {
+  content: "";
+  width: 80px;
+  height: 5px;
+  background: #192336;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 3px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #192336; /* Navy cards */
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  border-color: #ff9800; /* Glow effect */
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.cardContent {
+  padding: 28px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.cardContent h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.cardContent a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #192336;
+  background: #ff9800;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cardContent a:hover {
+  background: #fff;
+  color: #192336;
+  transform: translateX(6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ======================== */
+/* ✅ Responsive Styling */
+/* ======================== */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .projects {
+    padding: 80px 0;
+  }
+
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    gap: 30px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .cardContent h3 {
+    font-size: 1.35rem;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+  .projects {
+    padding: 70px 0;
+  }
+
+  .projects h2 {
+    font-size: 2.2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* stack cards */
+    gap: 25px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .cardContent {
+    padding: 22px;
+  }
+
+  .cardContent h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Extra small (small phones) */
+@media (max-width: 480px) {
+  .projects {
+    padding: 60px 0;
+  }
+
+  .projects h2 {
+    font-size: 1.9rem;
+    margin-bottom: 40px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .cardContent {
+    padding: 18px;
+  }
+
+  .cardContent h3 {
+    font-size: 1.1rem;
+  }
+
+  .cardContent a {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}

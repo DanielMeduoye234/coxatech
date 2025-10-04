@@ -1,0 +1,99 @@
+.heading {
+  width: 100%;
+  padding: 80px 20px 60px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  text-align: center;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.heading h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #ff9800;
+  border-radius: 2px;
+}
+
+.heading p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ==================== */
+/* ✅ Responsive Styles */
+/* ==================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .heading {
+    padding: 70px 15px 50px;
+  }
+
+  .heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .heading p {
+    font-size: 1.05rem;
+    max-width: 600px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .heading {
+    padding: 60px 15px 40px;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .heading {
+    padding: 50px 10px 35px;
+  }
+
+  .heading h1 {
+    font-size: 1.6rem;
+  }
+
+  .heading h1::after {
+    width: 40px; /* shrink underline */
+    height: 3px;
+  }
+
+  .heading p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 95%;
+  }
+}

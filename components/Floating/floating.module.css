@@ -1,0 +1,89 @@
+.floatingWrapper {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Main Floating Button */
+.floatingBtn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.floatingBtn:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
+
+.floatingBtn.active {
+  background: #192336;
+}
+
+/* Contact Options (hidden by default) */
+.contactOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.35s ease;
+}
+
+.contactOptions.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Each Option */
+.option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #192336;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.option:hover {
+  background: #ff9800;
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* ✅ Mobile Optimization */
+@media (max-width: 600px) {
+  .floatingBtn {
+    width: 52px;
+    height: 52px;
+    font-size: 1.2rem;
+  }
+
+  .option {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+}
