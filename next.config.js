@@ -8,9 +8,6 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    turbo: false, // Disable Turbopack
-  },
   reactStrictMode: true,
   webpack: (config, { isServer }) => {
     // Fix for .mjs ESM modules like Sanity
@@ -19,7 +16,6 @@ const nextConfig = {
       include: /node_modules/,
       type: 'javascript/auto',
     });
-
     return config;
   },
 };
