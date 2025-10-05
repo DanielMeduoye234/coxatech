@@ -1,28 +1,10 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "../Categories/project.module.css";
 import { client } from "../../sanity/lib/client";
 import Image from "next/image";
 import Link from "next/link";
 
-const NextjsProjects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "project" && category->slug.current == "nextjs"]{
-          _id,
-          title,
-          link,
-          "imageUrl": image.asset->url
-        }`
-      )
-      .then((data) => setProjects(data))
-      .catch((err) => console.error("Error fetching Next.js projects:", err));
-  }, []);
-
+const NextjsProjects = ({ projects }) => {
   return (
     <section className={styles.projects}>
       <div className={styles.grid}>
@@ -61,5 +43,24 @@ const NextjsProjects = () => {
     </section>
   );
 };
+
+// Fetch data at build time and enable ISR
+export async function getStaticProps() {
+  const projects = await client.fetch(
+    `*[_type == "project" && category->slug.current == "nextjs"]{
+      _id,
+      title,
+      link,
+      "imageUrl": image.asset->url
+    }`
+  );
+
+  return {
+    props: {
+      projects,
+    },
+    revalidate: 60, // regenerate page every 60 seconds
+  };
+}
 
 export default NextjsProjects;
