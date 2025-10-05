@@ -22,7 +22,7 @@ const HireMe = ({ open, setOpen }) => {
             <span>Email</span>
           </a>
           <a
-            href="https://wa.me/2347013468525"
+            href="https://wa.me/2349167560387"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.iconBtn}

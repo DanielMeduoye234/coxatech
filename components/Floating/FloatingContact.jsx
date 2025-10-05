@@ -13,7 +13,7 @@ export default function FloatingContact() {
         className={`${styles.contactOptions} ${open ? styles.show : ""}`}
       >
         <a
-          href="https://wa.me/2348012345678"
+          href="https://wa.me/2349167560387"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.option}
@@ -22,14 +22,14 @@ export default function FloatingContact() {
           <FaWhatsapp />
         </a>
         <a
-          href="mailto:your@email.com"
+          href="mailto:danielmeduoye@gmail.com"
           className={styles.option}
           aria-label="Email"
         >
           <FaEnvelope />
         </a>
         <a
-          href="tel:+2348012345678"
+          href="tel:+2347013468525"
           className={styles.option}
           aria-label="Phone"
         >
