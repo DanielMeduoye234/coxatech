@@ -1,10 +1,27 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import styles from "../Categories/project.module.css";
 import { client } from "../../sanity/lib/client";
 import Image from "next/image";
 import Link from "next/link";
 
-const WordpressProjects = ({ projects }) => {
+const WordpressProjects = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "project" && category->slug.current == "wordpress"]{
+          _id,
+          title,
+          link,
+          "imageUrl": image.asset->url
+        }`
+      )
+      .then((data) => setProjects(data));
+  }, []);
+
   return (
     <section className={styles.projects}>
       <div className={styles.grid}>
@@ -34,23 +51,5 @@ const WordpressProjects = ({ projects }) => {
     </section>
   );
 };
-
-export async function getStaticProps() {
-  const projects = await client.fetch(
-    `*[_type == "project" && category->slug.current == "wordpress"]{
-      _id,
-      title,
-      link,
-      "imageUrl": image.asset->url
-    }`
-  );
-
-  return {
-    props: {
-      projects,
-    },
-    revalidate: 60, // regenerate the page at most once every 60 seconds
-  };
-}
 
 export default WordpressProjects;
