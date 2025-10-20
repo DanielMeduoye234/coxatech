@@ -38,9 +38,6 @@ const Header = () => {
             <li>
               <Link href="/next">Next.js / React.js</Link>
             </li>
-            <li>
-              <Link href="/shop">Shopify</Link>
-            </li>
             
             <li className={styles.navbtn}>
               <a href="/cv.pdf" download className={styles.downloadBtn}>
@@ -85,11 +82,6 @@ const Header = () => {
           <li>
             <Link href="/next" onClick={() => setIsMobileMenuOpen(false)}>
               Next.js / React.js
-            </Link>
-          </li>
-          <li>
-            <Link href="/shop" onClick={() => setIsMobileMenuOpen(false)}>
-              Shopify
             </Link>
           </li>
          
