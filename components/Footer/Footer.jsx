@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className={styles.footerbtn}>
           {/* ✅ Open modal */}
-          <button onClick={() => setHireMeOpen(true)}>Hire Me</button>
+          <button onClick={() => setHireMeOpen(true)}>Work With Us</button>
         </div>
       </div>
       <div className={styles.footerBtm}>
@@ -27,17 +27,17 @@ const Footer = () => {
             <div className={styles.logo}>
               <Link href="/">
                 <Image
-                  src="/logo.png"
+                  src="/c.png"
                   alt="Logo"
-                  width={120}
-                  height={40}
+                  width={50}
+                  height={50}
                   priority
                 />
               </Link>
             </div>
             <p>
-              Website developer with 5 years Experience in building WordPress,
-              Shopify, and Next.js applications for clients worldwide. I am
+              Digital Presence Agency with years of Experience in building Brands online engaging websites,
+              Shopify, and Next.js applications for clients worldwide. we are
               passionate about delivering high-quality, scalable solutions
               tailored to your business needs.
             </p>

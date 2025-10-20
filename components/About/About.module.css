@@ -35,7 +35,7 @@
 .techStack h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #ff9800;
+  color: #d905b1;
 }
 
 .icons {
@@ -52,7 +52,7 @@
 
 .icons svg:hover {
   transform: translateY(-5px);
-  color: #ff9800;
+  color: #d905b1;
 }
 
 .right {
@@ -75,7 +75,7 @@
 
 .right h2 {
   font-size: 2rem;
-  color: #ff9800;
+  color: #d905b1;
   margin-bottom: 20px;
 }
 
@@ -103,7 +103,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #ff9800;
+  color: #d905b1;
 }
 
 .expBox p {

@@ -31,11 +31,11 @@
 }
 
 .navlinks a:hover {
-  color: #ff9800;
+  color: #d905b1;
 }
 
 .navbtn button .downloadBtn {
-  background-color: #ff9800;
+  background-color: #d905b1;
   color: #000;
   border: none;
   padding: 10px 22px;
@@ -48,7 +48,7 @@
 
 
 .downloadBtn{
-   background-color: #ff9800;
+   background-color: #d905b1;
   color: #000;
   border: none;
   padding: 10px 22px;
@@ -60,13 +60,13 @@
 }
 
 .downloadBtn:hover {
-  background-color: #e68900;
+  background-color: #d905b1;
   transform: translateY(-2px);
   color: #000;
 }
 
 .navbtn button:hover {
-  background-color: #e68900;
+  background-color: #d905b1;
   transform: translateY(-2px);
 }
 
@@ -126,7 +126,7 @@
 }
 
 .mobileMenu a:hover {
-  color: #ff9800;
+  color: #d905b1;
 }
 
 .mobileMenu .navbtn button {
@@ -160,7 +160,7 @@
     display: block;
   }
   .header {
-    margin: 10px 15px;
+    margin: 5px 15px;
     border-radius: 12px;
     padding: 12px 20px;
   }

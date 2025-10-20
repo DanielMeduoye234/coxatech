@@ -17,10 +17,10 @@ const Header = () => {
         <div className={styles.logo}>
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/c.png"
               alt="Logo"
-              width={120}
-              height={40}
+              width={50}
+              height={50}
               priority
             />
           </Link>
@@ -41,9 +41,10 @@ const Header = () => {
             <li>
               <Link href="/shop">Shopify</Link>
             </li>
+            
             <li className={styles.navbtn}>
               <a href="/cv.pdf" download className={styles.downloadBtn}>
-                DOWNLOAD CV
+                Download Brochure
               </a>
             </li>
           </ul>
@@ -91,6 +92,7 @@ const Header = () => {
               Shopify
             </Link>
           </li>
+         
           <li className={styles.navbtn}>
             <a
               href="/cv.pdf"
@@ -98,7 +100,7 @@ const Header = () => {
               className={styles.downloadBtn}
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              DOWNLOAD CV
+              Download Brochure
             </a>
           </li>
         </ul>

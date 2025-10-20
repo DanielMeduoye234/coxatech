@@ -17,7 +17,7 @@ const Hero = () => {
     : { duration: 5, repeat: Infinity, repeatType: "loop", ease: "easeInOut" };
 
   // Typing effect
-  const fullText = "Hi, I’m Daniel Meduoye";
+  const fullText = "Your Brand. Powered by Technology.";
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -37,17 +37,17 @@ const Hero = () => {
           {/* Left Text */}
           <div className={styles.text}>
             <h1>
-              {displayedText.split("Daniel Meduoye")[0]}
+              {displayedText.split("Powered by Technology")[0]}
               <span>
-                {displayedText.includes("Daniel Meduoye")
-                  ? "Daniel Meduoye"
+                {displayedText.includes("Powered by Technology")
+                  ? "Powered by Technology"
                   : ""}
               </span>
             </h1>
             <p>
-              A passionate <strong>Digital Marketer & Web Developer</strong>{" "}
-              with 5+ years of experience building high-performance websites in
-              WordPress, Shopify, and Next.js.
+              At CoxaTech, we craft the future of online branding — from
+              stunning websites and apps to smart AI automation, social media
+              growth, and creative content that moves audiences.
             </p>
             <div className={styles.cta}>
               {/* ✅ Trigger popup instead of Link */}
@@ -55,12 +55,12 @@ const Hero = () => {
                 className={styles.primaryBtn}
                 onClick={() => setHireMeOpen(true)}
               >
-                Hire Me
+                WORK WITH US
               </button>
 
               <button className={styles.secondaryBtn}>
                 <a href="/cv.pdf" download className={styles.downloadBtn}>
-                  DOWNLOAD CV
+                  OUR INSTAGRAM
                 </a>
               </button>
             </div>
@@ -73,12 +73,17 @@ const Hero = () => {
             transition={floatTransition}
             whileHover={shouldReduceMotion ? {} : { scale: 1.03 }}
           >
-            <Image
-              src="/header-img.png"
-              alt="Daniel Meduoye"
-              width={550}
-              height={550}
-              priority
+            <video
+              src="/header-video.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className={styles.heroVideo}
+              width={600}
+              height={600}
+              buffered="auto"
+              
             />
           </motion.div>
         </div>

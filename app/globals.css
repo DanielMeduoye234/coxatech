@@ -1,12 +1,12 @@
 :root {
   --background: #000000;   /* black background */
   --foreground: #ffffff;   /* white text */
-  --accent: #ff6600;       /* accent color (change if you like) */
+  --accent: #d905b1;       /* accent color (change if you like) */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: linear-gradient(135deg, #fff8f0 0%, #ffe0b2 20%, #ff9800 100%);;
+    --background: linear-gradient(135deg, #fff8f0 0%, #ffe0b2 20%, #d905b1 100%);;
     --foreground: #ededed;
   }
 }

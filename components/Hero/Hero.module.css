@@ -1,6 +1,6 @@
 .hero {
   padding: 80px 0;
-  background: linear-gradient(135deg, #fff8f0 0%, #ffe0b2 40%, #ff9800 100%);
+  background: linear-gradient(135deg, #fff8f0 0%, #ffe0b2 40%, #d905b1 100%);
   color: #000000;
   margin-bottom: 30px;
 }
@@ -25,7 +25,7 @@
 }
 
 .text h1 span {
-  color: #ff9800;
+  color: #d905b1;
   text-shadow: 0px 0px 15px rgba(255, 152, 0, 0.6);
 }
 
@@ -43,8 +43,8 @@
 }
 
 .primaryBtn {
-  background: #ff9800;
-  color: #000;
+  background: #d905b1;
+  color: #ffffff;
   border: none;
   padding: 12px 28px;
   border-radius: 6px;
@@ -55,14 +55,14 @@
 }
 
 .primaryBtn:hover {
-  background: #e68900;
+  background: #000000;
   transform: scale(1.05);
 }
 
 .secondaryBtn {
   background: transparent;
   color: #000000;
-  border: 2px solid #ff9800;
+  border: 2px solid #d905b1;
   padding: 10px 26px;
   border-radius: 6px;
   font-weight: 600;

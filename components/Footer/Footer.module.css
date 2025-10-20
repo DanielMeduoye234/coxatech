@@ -22,7 +22,7 @@
 }
 
 .footerbtn button {
-  background-color: #ff9800;
+  background-color: #d905b1;
   color: #000;
   border: none;
   padding: 14px 28px;
@@ -34,7 +34,7 @@
 }
 
 .footerbtn button:hover {
-  background-color: #ffa733;
+  background-color: #d905b1;
   transform: translateY(-2px);
 }
 
@@ -63,7 +63,7 @@
 .col2 h3,
 .col3 h3,
 .col4 h3 {
-  color: #ff9800;
+  color: #d905b1;
   font-family: "Urbanist", sans-serif;
   font-size: 18px;
   margin-bottom: 18px;
@@ -116,7 +116,7 @@
 }
 
 .socials a:hover {
-  background: #ff9800;
+  background: #d905b1;
   color: #000;
   transform: translateY(-2px);
 }

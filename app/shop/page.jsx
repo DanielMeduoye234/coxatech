@@ -1,3 +1,5 @@
+"use client"; 
+
 import React from "react";
 import Heading from "@/components/Heading/Heading";
 import Shopify from "@/components/Categories/ShopifyProjects";
@@ -15,3 +17,4 @@ const page = () => {
 };
 
 export default page;
+ 

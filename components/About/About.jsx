@@ -18,14 +18,15 @@ const About = () => {
         <div className={styles.aboutContent}>
           {/* Left Text */}
           <div className={styles.left}>
-            <h1>About Me</h1>
+            <h1>About Usx</h1>
             <p>
-              Hello! I'm <strong>Daniel Meduoye</strong>, a passionate web
-              developer with over <strong>5 years of experience</strong> building
-              dynamic, high-performance, and user-friendly websites. My expertise
-              lies in <strong>WordPress, Shopify, and Next.js/React.js</strong>,
-              where I bring modern design principles together with clean, scalable
-              code.
+              CoxaTech is a forward-thinking online branding and technology
+              company built for the digital age. We specialize in creating
+              innovative, high-performing solutions that help businesses grow,
+              stand out, and stay ahead in a fast-changing world. From website
+              and app development to video editing, social media management, and
+              AI-driven automation, we bring creativity and technology together
+              to deliver measurable results. Our Mission
             </p>
             <p>
               Beyond coding, I’m always exploring new technologies, contributing
@@ -51,8 +52,6 @@ const About = () => {
 
           {/* Right Section */}
           <div className={styles.right}>
-           
-
             {/* Experience */}
             <h2>Experience</h2>
             <div className={styles.experience}>
