@@ -62,8 +62,7 @@ const Footer = () => {
           <div className={styles.col3}>
             <h3 className={styles.footh3}>Contact</h3>
             <p>+234 701 3468 525</p>
-            <p>danielmeduoye@gmail.com</p>
-            <p>meduoyedaniel6@gmail.com</p>
+            <p>Info@coxatechai@gmail.com</p>
           </div>
           <div className={styles.col4}>
             <h3 className={styles.footh3}>Get in Touch</h3>
