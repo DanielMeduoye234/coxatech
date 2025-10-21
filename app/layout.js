@@ -17,8 +17,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "My Portfolio",
-  description: "Showcasing my projects",
+  title: "Coxatech",
+  description: "Building Brands Visibility",
 };
 
 export default function RootLayout({ children }) {
